@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>com.controller.FirstServlet</servlet-class>
+        <init-param>
+            <param-name>AUDI</param-name>
+            <param-value>20 million</param-value>
+             <description>1st rank among all cars in USA</description>
+        </init-param>
+        <init-param>
+            <param-name>ASTON MARTIN</param-name>
+            <param-value>16 Million</param-value>
+            <description>2nd Rank among all cars in USA</description>
+        </init-param>
+          
+    </servlet>
+    <context-param>
+        <param-name>USERNAME</param-name>
+        <param-value>Sayee Kulkarni</param-value>
+        
+    </context-param>
+    <context-param>
+        <param-name>PASSWORD</param-name>
+        <param-value>LoveCars</param-value>
+    </context-param>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/FirstServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
